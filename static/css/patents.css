@@ -1,0 +1,333 @@
+html,
+body {
+  background-color: black;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  position: relative;
+  background-color: transparent;
+  justify-content: left;
+  padding-left: 25px;
+  height: 150px;
+  width: 70%;
+  border-bottom: solid red 1px;
+}
+
+.navbutton {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  text-transform: capitalize;
+  padding-left: 35px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navbutton:hover {
+  font-weight: bold;
+  font-size: 30px;
+  color: red;
+  text-transform: capitalize;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+.content {
+  min-height: 100%;
+  align-items: right;
+  padding-top: 50px;
+  align-items: center;
+}
+
+p {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+.greet {
+  top: 45%;
+  width: 45%;
+  padding-left: 2%;
+  text-align: right;
+  color: white;
+  line-height: 45px;
+  position: absolute;
+  border-left: solid transparent 50px;
+}
+
+span {
+  color: red;
+}
+
+h6 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  line-height: 37px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  color: red;
+  width: 45%;
+}
+
+small {
+  color: red;
+  justify-content: center;
+  text-align: center;
+}
+
+hr {
+  color: red;
+  margin: auto;
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.patents {
+  height: 100%;
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.patents table {
+  width: 100%
+}
+
+tr {
+  border-bottom: solid red 1px;
+}
+
+.desc {
+  text-align: left;
+  line-height: 30px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+}
+.award-title{
+  color:red;
+  padding-top: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+.award-desc{
+  border-bottom: solid red 1px;
+}
+
+table{
+  min-width: 75%;
+  margin: auto; 
+}
+
+table .table-head td{
+  color: red;
+  text-align: center;
+}
+
+a{
+  margin: auto;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+
+  html,
+  body {
+    background-color: black;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .navbar {
+    background-color: transparent;
+    justify-content: center;
+    padding-left: 3px;
+    height: 50px;
+    width: 100%;
+    border-bottom: solid red 1px;
+  }
+
+  .navbutton {
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    text-transform: capitalize;
+    padding-left: 10px;
+    text-decoration: none;
+    transition: 0.1s;
+  }
+  .navbutton:hover {
+  font-weight: bold;
+  font-size: 11px;
+  color: red;
+  text-transform: capitalize;
+  padding-left: 5px;
+  text-decoration: none;
+}
+.footer {
+    width: 100%;
+    padding-top: 25px;
+    position: absolute;
+    height: 7%;
+  }
+
+  .left h2{
+    font-size: 18px;
+  }
+  .right h2{
+    font-size: 18px;
+  }
+
+  .left {
+    width: 15%;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .right {
+    width: 50%;
+    float: right;
+    margin-right: 10%;
+  }
+
+  .left h6 {
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .left h6:hover {
+    color: red;
+  }
+
+  .right-left {
+    width: 90px;
+    float: left;
+  }
+  .right-right{
+      float:right;
+      width:90px;
+  }
+
+  .right-left h6,
+  .right-right h6 {
+    text-align: left;
+    font-size: 10px;
+    margin-right: 50%;
+  }
+
+  .right-left a,
+  .right-right a,
+  .left a{
+    text-decoration: none;
+  }
+
+  .right-left h6:hover,
+  .right-right h6:hover {
+    color: red;
+  }
+
+
+.content {
+  min-height: 100%;
+  align-items: right;
+  padding-top: 50px;
+  align-items: center;
+}
+
+p {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+.patents p {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  line-height:15px;
+}
+
+span {
+  color: red;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+  color: red;
+  width: 40%;
+}
+
+.title h3{
+    font-size:15px;
+}
+.title h5{
+    font-size:12px;
+}
+
+small {
+  color: red;
+  justify-content: center;
+  text-align: center;
+}
+
+hr {
+  color: red;
+  margin: auto;
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.patents {
+  height: 100%;
+  width: 94%;
+  margin-left: 3%;
+}
+
+.patents table {
+  width: 100%
+}
+
+tr {
+  border-bottom: solid red 1px;
+}
+
+.desc {
+  text-align: left;
+  line-height: 30px;
+}
+
+.award-title{
+  color:red;
+  padding-top: 25px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+}
+.award-desc{
+  border-bottom: solid red 1px;
+}
+}

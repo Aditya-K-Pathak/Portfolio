@@ -1,0 +1,80 @@
+{
+    "Home": {
+        "name": [
+            "Aditya",
+            "Pathak"
+        ],
+        "designation": "Student | Researcher | Patentee | Problem Solver",
+        "about": "Hi! I'm Aditya Pathak, I'm from Bihar and currently I'm pursuing my Bachelor of Technology from Chandigarh Group of College, Landran. Talking about my skills I'm proficient in Python programming language and Full-Stack Web development. Other than these I have made several project for which I have filed patents and wrote Research papers. </h6> <br> <h6> In terms of Real world projects and experience I have built a website for our College Chandigarh Group of College to organize a confrence for authors of Research Papers. The papers were published in <span><strong>Springer</strong></span> and the conference was sponsored by <br><span><strong>All India Council of Technical Education (AICTE).</strong></span></h6>"
+    },
+    "Projects": {
+        "Object Detection System for Visually impaired Persons": [
+            "The project is using a deep learning algorithm YOLO v5 which is about 2.5 times faster than other CNN algorithms",
+            "As output, it tells the user the name of object present in front of the user/camera",
+            "It can be used as motion sensor camera of surveillance camera"
+        ],
+        "Monument Identification and detailing device": [
+            "The project is using a deep learning algorithm YOLO v5 which is about 2.5 times faster than other CNN algorithms",
+            "As output, it tells the user the ndetails of the Monument such as the place where it is situated, current temparature of the place, distance of the monument from user's current location etc.",
+            "Other than these, it can be used as an assistant by commomn people or by local guides to promote tourism"
+        ],
+        "Health & Habit Tracker": [
+            "The project receives some useful insights such as activity minutes, heart rate from Google Fit API, location info from IP address and and store these data in a database.",
+            "These data are later used to extract information like Blood-Pressure, Sugar Level and Pulse rate of the user in real time"
+        ]
+    },
+    "Patents": {
+        "Automated Unmanned Aerial Vehicle Detection System": {
+            "app_no": 202311032388,
+            "dof": "May 8<sup>th</sup> 2023",
+            "inventors": "Aditya Pathak",
+            "desc": "This method uses a deep learning model to detect drones, recognizing them outside human vision or difficult to identify. It uses a convolutional neural network (CNN) to create a bounding box around the drone, identifying its type. The method can detect both static and mobile drones, even at high speeds. The neural network classifies images into multiple frames, identifying the drone's area and labeling. With 100% accuracy over 178 epochs, it can be used for commercial and defense purposes. The method has been trained to avoid box and object loss."
+        },
+        "Adjustable Eating Assistive System For Toddlers": {
+            "app_no": 202311038644,
+            "dof": "June 5<sup>th</sup> 2023",
+            "inventors": "Aditya Pathak, Jay Jain, Tanisha Yadav, Abhishek, Lakshya Pratap Singh, Parneet Kaur",
+            "desc": "This method uses a deep learning model to detect drones, recognizing them outside human vision or difficult to identify. It uses a convolutional neural network (CNN) to create a bounding box around the drone, identifying its type. The method can detect both static and mobile drones, even at high speeds. The neural network classifies images into multiple frames, identifying the drone's area and labeling. With 100% accuracy over 178 epochs, it can be used for commercial and defense purposes. The method has been trained to avoid box and object loss."
+        },
+        "SONAR-Based Health Monitoring & Support Device": {
+            "app_no": 202311056290,
+            "dof": "August 22<sup>nd</sup> 2023",
+            "inventors": "Aditya Pathak",
+            "desc": "The Sonar-Based Health Monitoring And Support Device was developed to tackle health issues during the pandemic. It aids visually impaired individuals by providing guidance on obstacles. The device uses low-frequency SONAR to detect disturbances and identify objects. It can monitor blood pressure, hemoglobin levels, and blood sugar levels, making it suitable for wearable devices. It also features accident alerts and location tracking for emergency situations."
+        }
+    },
+    "Awards": {
+        "1<sup>st</sup> Position in Code Crunch Competition": "Presented by Chandiagarh Group of College for obtaining first position in an Inter-College Coding Competition",
+        "Award for special Achievement": "Presented by ACIC RISE Association on National IPR Day",
+        "Award for best Idea pitching & presentation": "Presented by Chandigarh Group of College for best and unique Idea on sustainable projects",
+        "Award for best Coder": "Presented by Chandigarh Group of College for best performance in coding competition (Code-O-Fiesta)",
+        "Award for best coder": "Presented by Chandigarh Group of College for best performance in coding competition (Code Craze)",
+        "Award for best Project": "Presented by Chandigarh Group of College for best project presentation on National Science day 2022",
+        "Award for quiz competition": "Presented by Chandigarh Group of College for best performance in quiz in Eminence 2K21"
+    },
+    "Research": {
+        "Data Encryption using Morse Code": {
+            "publisher": "CGC International Journal of Contemporary Technology and Research",
+            "doi": "10.46860/cgcijctr.2022.07.31.319",
+            "author": "Aditya Pathak, Anmol Chahal, Sagar",
+            "desc": "Cryptography is a method of hiding or protecting data from unauthorized access. With the rise of internet usage, data security is a major concern due to cyber-attacks and over-reliance on the internet. Cryptographic algorithms are used to ensure data is accessible only to the intended user. Morse code, a method of encryption, can be used to encrypt data but may pose a threat to user data. Python's Cryptography module, which uses symmetric encryption, is used to encrypt both the algorithm and data files. This paper demonstrates how Morse code, time, and Python's Cryptography module can be combined to provide maximum data safety. safety."
+        }
+    },
+    "Footer": {
+        "contact": {
+            "mailto:adityapathak2874@gmail.com": "E-Mail",
+            "phone:+91 8840 2073 63": "Phone",
+            "https://in.linkedin.com/in/aditya-pathak-183597213": "LinkedIn",
+            "https://www.github.com/Aditya-K-Pathak": "GitHub",
+            "https://leetcode.com/adityapathak2874/": "LeetCode"
+        },
+        "Links": {
+            "Home": "../",
+            "Patent": "/patents",
+            "Projects": "projects",
+            "Awards": "/awards",
+            "Research Papers": "/research"
+        }
+    },
+    "Visitors": 128
+}

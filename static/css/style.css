@@ -1,0 +1,371 @@
+html,
+body {
+  background-color: black;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  background-color: transparent;
+  justify-content: center;
+  padding-left: 25px;
+  height: 150px;
+  width: 70%;
+  border-bottom: solid red 1px;
+}
+
+.navbar nav ul{
+    list-style-type:none;
+    display:flex;
+}
+
+.navbutton {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  text-transform: capitalize;
+  padding-left: 35px;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.navbutton:hover {
+  font-weight: bold;
+  font-size: 30px;
+  color: red;
+  text-transform: capitalize;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+.content {
+  min-height:81%;
+  align-items: right;
+  border-bottom: solid red 2px;
+}
+
+.greet {
+  position:relative;
+  top:35%;
+  width: 45%;
+  padding-left: 2%;
+  text-align: right;
+  color: white;
+  line-height: 45px;
+  position: absolute;
+  border-left: solid transparent 50px;
+}
+
+span {
+  color: red;
+  text-decoration: underline;
+}
+
+h6 span {
+  color: red;
+  text-decoration: none;
+}
+
+.p1 {
+  float: right;
+  margin-right: 10%;
+  width: auto;
+  height: 500px;
+  border-top: solid black 60px;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+
+.buttons {
+  top: 65%;
+  color: red;
+  padding-top: 5%;
+  position: relative;
+  background-color: transparent;
+  justify-content: right;
+  padding-left: 33%;
+}
+
+.btn {
+  color: red;
+  width: 250px;
+  font-size: 25px;
+  border: solid 2px red;
+  height: 60px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  color: white;
+  width: 250px;
+  font-size: 30px;
+  border: solid 2px white;
+  height: 60px;
+}
+
+.about {
+  min-height: 100%;
+  border-bottom:solid red 2px;
+}
+
+.heading h1 {
+  padding-top: 5%;
+  font-weight: bold;
+  font-size: 45px;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.about-content {
+  padding-top: 4%;
+  padding-left: 15%;
+  width: 100%;
+  padding-right: 15%;
+}
+
+h6 {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  line-height: 40px;
+}
+
+.copy{
+  width:100%;
+  background-color: white;
+}
+small {
+  width:100%;
+  float: left;
+  color: red;
+  justify-content: center;
+  text-align: center;
+}
+
+img{
+  color:white;
+  background-color: white;
+}
+
+table{
+  min-width: 75%;
+  margin: auto; 
+}
+
+table .table-head td{
+  color: red;
+  text-align: center;
+}
+
+a{
+  margin: auto;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+
+  html,
+  body {
+    background-color: black;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .navbar {
+    background-color: transparent;
+    justify-content: center;
+    padding-left: 3px;
+    height: 50px;
+    width: 100%;
+    border-bottom: solid red 1px;
+  }
+
+  .navbutton {
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    text-transform: capitalize;
+    padding-left: 10px;
+    text-decoration: none;
+    transition: 0.1s;
+  }
+    .navbutton:hover {
+  font-weight: bold;
+  font-size: 11px;
+  color: red;
+  text-transform: capitalize;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+  .content {
+    min-height: 100%;
+    align-items: center;
+    border-bottom: solid red 2px;
+  }
+
+  .greet {
+    width: 90%;
+    padding-top: 20%;
+    text-align: right;
+    color: white;
+    line-height: 45px;
+  }
+
+  .greet h2{
+    font-size: 20px;
+  }
+
+  .greet h1{
+    font-size: 25px;
+  }
+
+  .greet h4{
+    font-size: 18px;
+  }
+
+  span {
+    color: red;
+    text-decoration: underline;
+  }
+
+  h6 span {
+    color: red;
+    text-decoration: none;
+  }
+
+  .p1 {
+    float:right;
+    width: auto;
+    height: 250px;
+    margin-right:10%;
+  }
+
+  .buttons {
+    color: red;
+    padding-top: 5%;
+    background-color: transparent;
+    justify-content:left;
+    padding-left: 0px;
+  }
+
+  .btn {
+    color: red;
+    width: 150px;
+    font-size: 18px;
+    border: solid 2px red;
+    height: 50px;
+    transition: 0.2s;
+  }
+
+  .about {
+    min-height: 100%;
+    border-bottom: solid red 2px;
+  }
+
+  .heading h1 {
+    padding-top: 5%;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  .about-content {
+    padding-top: 4%;
+    padding-left: 5%;
+    width: 100%;
+    padding-right: 5%;
+  }
+
+  h6 {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    line-height: 26px;
+    transition:0.2s;
+  }
+
+  .footer {
+    width: 100%;
+    padding-top: 25px;
+    position: absolute;
+    height: 7%;
+  }
+
+  .left h2{
+    font-size: 18px;
+  }
+  .right h2{
+    font-size: 18px;
+  }
+
+  .left {
+    width: 15%;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .right {
+    width: 50%;
+    float: right;
+    margin-right: 10%;
+  }
+
+  .left h6 {
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .left h6:hover {
+    color: red;
+  }
+
+  .right-left {
+    width: 90px;
+    float: left;
+  }
+  .right-right{
+      float:right;
+      width:90px;
+  }
+
+  .right-left h6,
+  .right-right h6 {
+    text-align: left;
+    font-size: 10px;
+    margin-right: 50%;
+  }
+
+  .right-left a,
+  .right-right a,
+  .left a{
+    text-decoration: none;
+  }
+
+  .right-left h6:hover,
+  .right-right h6:hover {
+    color: red;
+  }
+
+  .copy {
+    width: 100%;
+    background-color: white;
+  }
+
+  small {
+    /* position: relative; */
+    width: 100%;
+    float: left;
+    color: red;
+    justify-content: center;
+    text-align: center;
+  }
+
+  img {
+    color: white;
+    background-color: white;
+  }
+}
