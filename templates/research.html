@@ -29,25 +29,14 @@
         <p>Hey, I have mentioned about the research papers that I have wrote and published..</p>
         <hr>
         <div class="patents">
-            <table>
-                {% for key, val in Research.items %}
-                <tr>
-                    <td class="title">
-                        <h3>{{ key }}</h3>
-                        <h5>{{ val.publisher }}</h5>
-                        <h5>DOI.: {{val.doi}}</h5>
-                        <h5>Authors - {{ val.author }}</h5>
-                    </td>
-                    <td>
-                        <p class="desc" style="text-align:justify;">
-                            {{ val.desc }}
-                        </p>
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
+            {% for key, val in Research.items %}
+                <h3 class="research-title">{{key | safe }}</h3>
+                <h5 class="research-title">{{val.publisher | safe }}</h5>
+                <h5 class="research-title">{{val.doi | safe }}</h5>
+                <h5 class="research-title">{{val.author | safe }}</h5>
+                <p class="research-desc">{{val.desc | safe }}</h2>
+            {% endfor %}
         </div>
-    </div>
 
     <table>
         <tr class="table-head" style="border-bottom: solid black 1px;">

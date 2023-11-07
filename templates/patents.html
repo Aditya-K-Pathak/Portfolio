@@ -28,27 +28,16 @@
         <h1><span>Patents Filed</span></h1>
         <p>Hey, I have mentioned all the patents that I have filed...</p>
         <hr>
-        <div class="patents">
-            <table>
-                {% for key, val in Patents.items %}
-                <tr>
-                    <td class="title">
-                        <h3> {{key}} </h3>
-                        <h5>Application No.: {{ val.app_no }}</h5>
-                        <h5>Date of Filing: May {{ val.dof | safe }}</h5>
-                        <h5>Inventor(s): {{ val.inventors }}</h5>
-                    </td>
-                    <td>
-                        <p class="desc" style="text-align:justify;">
-                            {{val.desc}}
-                        </p>
-                    </td>
-                </tr>
-                {% endfor %}
-            </table>
-        </div>
-    </div>
 
+        <div class="patents">
+            {% for key, val in Patents.items %}
+                <h3 class="title" style="margin-top: 5%;"> {{key}} </h3>
+                <h5 class="title">Application No.: {{ val.app_no }}</h5>
+                <h5 class="title">Date of Filing: May {{ val.dof | safe }}</h5>
+                <h5 class="title">Inventor(s): {{ val.inventors }}</h5>
+                <p class="patent-desc">{{val.desc | safe }}</h2>
+            {% endfor %}
+        </div>
 
     <!-- Footer Starts here -->
     <table>

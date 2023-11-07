@@ -59,7 +59,7 @@ p {
   border-left: solid transparent 50px;
 }
 
-span {
+span, .title {
   color: red;
 }
 
@@ -76,10 +76,16 @@ h1 {
   font-weight: bold;
 }
 
-.title {
-  font-weight: bold;
+.research-title{
   color: red;
-  width: 45%;
+  text-align: center;
+}
+
+.research-desc, .patent-desc{
+  justify-content: center;
+  margin: auto;
+  border-bottom: solid red 1px;
+  padding-bottom: 5%;
 }
 
 small {
@@ -99,7 +105,8 @@ hr {
 .patents {
   height: 100%;
   width: 75%;
-  margin-left: 12.5%;
+  margin: auto;
+  text-align: center;
 }
 
 .patents table {
