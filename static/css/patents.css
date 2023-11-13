@@ -55,17 +55,6 @@ p {
   font-size: 24px;
 }
 
-.greet {
-  top: 45%;
-  width: 45%;
-  padding-left: 2%;
-  text-align: right;
-  color: white;
-  line-height: 45px;
-  position: absolute;
-  border-left: solid transparent 50px;
-}
-
 span, .title {
   color: blue;
 }
@@ -296,9 +285,8 @@ h1 {
 }
 
 .title {
-  font-weight: bold;
   color: blue;
-  width: 40%;
+  width: 100%;
 }
 
 .title h3{
@@ -344,7 +332,6 @@ tr {
 .award-title{
   color:blue;
   padding-top: 25px;
-  font-weight: bold;
   text-align: center;
   text-transform: capitalize;
 }
