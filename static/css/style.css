@@ -8,10 +8,10 @@ body {
 .navbar {
   background-color: transparent;
   justify-content: center;
-  padding-left: 25px;
+  padding-left: 15px;
   height: 150px;
   width: 70%;
-  border-bottom: solid red 1px;
+  border-bottom: solid blue 1px;
 }
 
 .navbar nav ul{
@@ -24,7 +24,7 @@ body {
   font-size: 25px;
   color: white;
   text-transform: capitalize;
-  padding-left: 35px;
+  padding-left: 30px;
   text-decoration: none;
   transition: 0.1s;
 }
@@ -32,7 +32,7 @@ body {
 .navbutton:hover {
   font-weight: bold;
   font-size: 30px;
-  color: red;
+  color: blue;
   text-transform: capitalize;
   padding-left: 40px;
   text-decoration: none;
@@ -41,7 +41,7 @@ body {
 .content {
   min-height:81%;
   align-items: right;
-  border-bottom: solid red 2px;
+  border-bottom: solid blue 2px;
 }
 
 .greet {
@@ -57,12 +57,12 @@ body {
 }
 
 span {
-  color: red;
+  color: blue;
   text-decoration: underline;
 }
 
 h6 span {
-  color: red;
+  color: blue;
   text-decoration: none;
 }
 
@@ -78,7 +78,7 @@ h6 span {
 
 .buttons {
   top: 65%;
-  color: red;
+  color: blue;
   padding-top: 5%;
   position: relative;
   background-color: transparent;
@@ -87,10 +87,10 @@ h6 span {
 }
 
 .btn {
-  color: red;
+  color: blue;
   width: 250px;
   font-size: 25px;
-  border: solid 2px red;
+  border: solid 2px blue;
   height: 60px;
   transition: 0.2s;
 }
@@ -105,7 +105,7 @@ h6 span {
 
 .about {
   min-height: 100%;
-  border-bottom:solid red 2px;
+  border-bottom:solid blue 2px;
 }
 
 .heading h1 {
@@ -138,7 +138,7 @@ h6 {
 small {
   width:100%;
   float: left;
-  color: red;
+  color: blue;
   justify-content: center;
   text-align: center;
 }
@@ -154,12 +154,19 @@ table{
 }
 
 table .table-head td{
-  color: red;
+  color: blue;
   text-align: center;
 }
 
 a{
   margin: auto;
+  text-decoration: none;
+}
+
+#switch {
+  margin-left: auto; 
+  margin-right: 0;
+  font-size: 50px;
   text-decoration: none;
 }
 
@@ -178,7 +185,7 @@ a{
     padding-left: 3px;
     height: 50px;
     width: 100%;
-    border-bottom: solid red 1px;
+    border-bottom: solid blue 1px;
   }
 
   .navbutton {
@@ -193,16 +200,23 @@ a{
     .navbutton:hover {
   font-weight: bold;
   font-size: 11px;
-  color: red;
+  color: blue;
   text-transform: capitalize;
   padding-left: 5px;
   text-decoration: none;
 }
 
+  #switch {
+    margin-left: auto; 
+    margin-right: 0;
+    font-size: 30px;
+    text-decoration: none;
+  }
+
   .content {
     min-height: 100%;
     align-items: center;
-    border-bottom: solid red 2px;
+    border-bottom: solid blue 2px;
   }
 
   .greet {
@@ -226,12 +240,12 @@ a{
   }
 
   span {
-    color: red;
+    color: blue;
     text-decoration: underline;
   }
 
   h6 span {
-    color: red;
+    color: blue;
     text-decoration: none;
   }
 
@@ -243,7 +257,7 @@ a{
   }
 
   .buttons {
-    color: red;
+    color: blue;
     padding-top: 5%;
     background-color: transparent;
     justify-content:left;
@@ -251,17 +265,17 @@ a{
   }
 
   .btn {
-    color: red;
+    color: blue;
     width: 150px;
     font-size: 18px;
-    border: solid 2px red;
+    border: solid 2px blue;
     height: 50px;
     transition: 0.2s;
   }
 
   .about {
     min-height: 100%;
-    border-bottom: solid red 2px;
+    border-bottom: solid blue 2px;
   }
 
   .heading h1 {
@@ -320,7 +334,7 @@ a{
   }
 
   .left h6:hover {
-    color: red;
+    color: blue;
   }
 
   .right-left {
@@ -347,7 +361,7 @@ a{
 
   .right-left h6:hover,
   .right-right h6:hover {
-    color: red;
+    color: blue;
   }
 
   .copy {
@@ -359,7 +373,7 @@ a{
     /* position: relative; */
     width: 100%;
     float: left;
-    color: red;
+    color: blue;
     justify-content: center;
     text-align: center;
   }
