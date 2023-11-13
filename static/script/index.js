@@ -56,15 +56,7 @@ function dark_mode(){
 }
 
 function mode_shift(){
-  console.log(dark);
   dark ++;
-  if (dark % 2 == 1) {
-    light_mode();
-    console.log("Dark");
-  }
-  else {
-    dark_mode();
-    console.log("light");
-  }
-  // console.log(dark);
+  if (dark % 2 == 1) light_mode();
+  else console.log("light");
 }
