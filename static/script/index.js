@@ -13,6 +13,7 @@ var h6 = document.getElementsByTagName("h6");
 var h4 = document.getElementsByTagName("h4");
 
 var p = document.getElementsByTagName("p");
+var li = document.getElementsByTagName("li");
 
 function light_mode(){
   document.getElementById("switch").innerHTML = "🌙";
@@ -31,6 +32,7 @@ function light_mode(){
   for (var i = 0; i < h4.length; i++) h4[i].style.color = "black";
   for (var i = 0; i < h6.length; i++) h6[i].style.color = "black";
   for (var i = 0; i < p.length; i++) p[i].style.color = "black";
+  for (var i = 0; i < li.length; i++) li[i].style.color = "black";
 }
 
 function dark_mode(){
@@ -50,6 +52,7 @@ function dark_mode(){
   for (var i = 0; i < h4.length; i++) h4[i].style.color = "white";
   for (var i = 0; i < h6.length; i++) h6[i].style.color = "white";
   for (var i = 0; i < p.length; i++) p[i].style.color = "white";
+  for (var i = 0; i < li.length; i++) li[i].style.color = "white";
 }
 
 function mode_shift(){
