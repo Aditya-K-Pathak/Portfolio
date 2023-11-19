@@ -13,3 +13,9 @@ python3 manage.py runserver
 Composition - 
 ./static/ - contains image and css for the website i.e., static files.
 ./templates/ - contains html file for redirecting urls to specific webpage.
+
+**Update Log**
+#V.0.3.0
+- Set Debug = False
+- Removed Static File dependencies
+- Added Page not Found Error Page
