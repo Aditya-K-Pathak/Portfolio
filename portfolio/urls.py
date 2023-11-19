@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from . import views
+from django.conf import settings
+import os
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,4 +26,5 @@ urlpatterns = [
     path('patents', views.patents),
     path('awards', views.awards),
     path('research', views.research),
+    path('sitemap', views.sitemap),
 ]

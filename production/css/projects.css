@@ -1,0 +1,375 @@
+html,
+body {
+  background-color: black;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+  position: relative;
+  background-color: transparent;
+  justify-content: left;
+  padding-left: 25px;
+  height: 150px;
+  width: 70%;
+  border-bottom: solid blue 1px;
+}
+
+.navbutton {
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  text-transform: capitalize;
+  padding-left: 35px;
+  text-decoration: none;
+  transition: 0.1s;
+}
+
+.navbutton:hover {
+  font-weight: bold;
+  font-size: 30px;
+  margin: auto;
+  color: blue;
+  text-transform: capitalize;
+  padding-left: 40px;
+  text-decoration: none;
+}
+
+.content h1 {
+  color: blue;
+}
+
+.content {
+  align-items: right;
+  padding-top: 50px;
+  align-items: center;
+  max-width: 100%;
+}
+
+p {
+  padding-top: none;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+span {
+  color: blue;
+}
+
+h6 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.footer {
+  padding-left: 10%;
+  padding-top: 25px;
+  width: 100%;
+  height: 30%;
+}
+
+.left {
+  width: 35%;
+  float: left;
+  margin-left: 10%;
+}
+
+.right {
+  width: 40%;
+  float: right;
+  margin-right: 10%;
+}
+
+.left h6 {
+  text-align: left;
+  font-size: 14px;
+}
+
+.left h6:hover {
+  color: blue;
+}
+
+.right-left {
+  width: 40%;
+  float: left;
+}
+
+.right-left h6,
+.right-right h6 {
+  text-align: left;
+  font-size: 14px;
+  margin-right: 50%;
+  text-decoration: none;
+}
+
+.right-left a,
+.right-right a {
+  text-decoration: none;
+}
+
+.right-left h6:hover,
+.right-right h6:hover {
+  color: blue;
+}
+
+small {
+  color: blue;
+  justify-content: center;
+  text-align: center;
+}
+
+hr {
+  color: blue;
+  margin: auto;
+  width: 85%;
+  padding-top: 10px;
+  /*padding-bottom: px;*/
+}
+
+.projects {
+  height: 100%;
+  width: 75%;
+  margin-left: 12.5%;
+}
+
+.title {
+  margin: auto;
+  width: 100%;
+  color: blue;
+  text-align: center;
+  float: left;
+  padding: 0%;
+}
+
+.desc {
+  width: 50%;
+  padding-top: 1%;
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+}
+ul {
+    padding:2%;
+}
+ul li {
+    display: table;
+    text-align:center;
+    margin:auto;
+}
+li {
+    list-style-type:none;
+}
+
+p{
+    color:white;
+}
+
+body{
+    color:white;
+}
+
+table{
+  min-width: 75%;
+  margin: auto; 
+}
+
+table .table-head td{
+  color: blue;
+  text-align: center;
+}
+
+a{
+  margin: auto;
+  text-decoration: none;
+}
+
+#switch {
+  margin-left: auto; 
+  margin-right: 0;
+  font-size: 50px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 900px) {
+
+  html,
+  body {
+    background-color: black;
+    height: 100%;
+    max-width:100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .navbar {
+    background-color: transparent;
+    justify-content: center;
+    padding-left: 3px;
+    height: 50px;
+    width: 100%;
+    border-bottom: solid blue 1px;
+  }
+
+  .navbutton {
+    font-weight: bold;
+    font-size: 11px;
+    color: white;
+    text-transform: capitalize;
+    padding-left: 10px;
+    text-decoration: none;
+    transition: 0.1s;
+  }
+    .navbutton:hover {
+  font-weight: bold;
+  font-size: 11px;
+  color: blue;
+  text-transform: capitalize;
+  padding-left: 5px;
+  text-decoration: none;
+}
+
+#switch {
+  margin-left: auto; 
+  margin-right: 0;
+  font-size: 30px;
+  text-decoration: none;
+}
+.footer {
+    width: 100%;
+    padding-top: 25px;
+    height: 7%;
+  }
+
+  .left h2{
+    font-size: 18px;
+  }
+  .right h2{
+    font-size: 18px;
+  }
+
+  .left {
+    width: 15%;
+    float: left;
+    margin-left: 10%;
+  }
+
+  .right {
+    width: 60%;
+    float: right;
+    margin-right: 10%;
+  }
+
+  .left h6 {
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .left h6:hover {
+    color: blue;
+  }
+
+  .right-left {
+    width: 90px;
+    float: left;
+  }
+  .right-right{
+      float:right;
+      width:90px;
+  }
+
+  .right-left h6,
+  .right-right h6 {
+    text-align: left;
+    font-size: 10px;
+    margin-right: 50%;
+  }
+
+  .right-left a,
+  .right-right a,
+  .left a{
+    text-decoration: none;
+  }
+
+  .right-left h6:hover,
+  .right-right h6:hover {
+    color: blue;
+  }
+
+
+
+p {
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+}
+
+span {
+  color: blue;
+}
+
+h6 {
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+
+hr {
+  color: blue;
+  margin: auto;
+  width: 85%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.content{
+    width:100%;
+}
+.projects {
+  height: 100%;
+  width: 100%;
+  margin-left:0%;
+}
+
+.projects table {
+  width: 100%;
+  margin-left: 0%;
+}
+
+.title {
+  width: 100%;
+  color: blue;
+  text-align: center;
+  float: left;
+  padding-top: 2%;
+}
+
+.title h3{
+    font-size:16px;
+}
+li {
+    font-size:12px;
+}
+
+.desc {
+  width: 100%;
+  padding-right:2%;
+  padding-top: 3%;
+  color: white;
+  font-size: 12px;
+  line-height: 16px;
+}
+}

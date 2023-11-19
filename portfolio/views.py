@@ -1,5 +1,8 @@
-from django.shortcuts import render
 import json
+from django.shortcuts import render
+from django.shortcuts import render
+from django.template import RequestContext
+
 
 class GetData:
     def __init__(self) -> None:
@@ -49,3 +52,12 @@ def research(requests):
 
 def awards(requests):
     return render(requests, "awards.html", webdata.get_awards())
+
+def sitemap(requests):
+    return render(requests, "sitemap.xml")
+
+# def handler404(request):
+#     response = render_to_response('404.html', {},
+#                                     context_instance=RequestContext(request))
+#     response.status_code = 404
+#     return response
