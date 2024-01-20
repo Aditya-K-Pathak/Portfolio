@@ -1,8 +1,6 @@
 import json
+from datetime import datetime
 from django.shortcuts import render
-from django.shortcuts import render
-from django.template import RequestContext
-
 
 class GetData:
     def __init__(self) -> None:
@@ -19,23 +17,34 @@ class GetData:
 
     def get_home(self) -> dict:
         self.update_visitors()
+        logger.write_logbook("Home")
         return dict(self.data)
-    
+
     def get_patents(self) -> dict:
         self.update_visitors()
+        logger.write_logbook("Patents")
         return dict(self.data)
-    
+
     def get_awards(self) -> dict:
         self.update_visitors()
+        logger.write_logbook("Awards")
         return dict(self.data)
-    
+
     def get_projects(self) -> dict:
         self.update_visitors()
+        logger.write_logbook("Projects")
         return dict(self.data)
-    
+
     def get_research(self) -> dict:
         self.update_visitors()
+        logger.write_logbook("Research")
         return dict(self.data)
+
+class logger:
+    def write_logbook(page):
+        with open("static/data/logs.log", "a") as log:
+            log.write(str(datetime.now()) + " | " + page)
+        return True
 
 webdata = GetData()
 def index(request):
@@ -55,9 +64,3 @@ def awards(requests):
 
 def sitemap(requests):
     return render(requests, "sitemap.xml")
-
-# def handler404(request):
-#     response = render_to_response('404.html', {},
-#                                     context_instance=RequestContext(request))
-#     response.status_code = 404
-#     return response
