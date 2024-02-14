@@ -104,8 +104,11 @@ def contact(request):
             if mailverification.validationHandler.initiateValidation(
                 Name, Email
             ):
+                actions.Contacts.addQuery(Name, Email, Comment)
+                response = mailverification.RESPONSEMAILTEMPLATE.replace('__name__', Name)
+                response = response.replace('__response__', Comment)
+                mailverification.Mail().sendMail('Your Response has been Recorded', Email, response)
                 return redirect('./verification')
-            actions.Contacts.addQuery(Name, Email, Comment)
 
     # Call the interface function for the Contact page
     interface(request, 'Contact')
