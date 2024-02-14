@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patent - Aditya Pathak</title>
+    <link rel="stylesheet" href="{% static 'css/patents.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'js/patents.js' %}"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    {% include 'loading.html' %}
+
+    {% include 'header.html' %}
+
+    <div id="heading">
+        <h1>Patents</h1>
+        <p>Hey, here I have mentioned all the patents that I have filed...</p>
+    </div>
+    <hr>
+    <div id="content">
+        {% for key, val in Patents.items %}
+        {% if key != 'weather' and key != 'newsletter' and key != 'Temperature' %}
+        <div class="patents">
+            <h2> {{ key }} </h2>
+            <h3> Application No.: {{ val.app_no }} </h3>
+            <h3> Date of Filling: {{ val.dof|safe }}</h3>
+            <h4>Inventor(s): {{val.inventors}}</h4>
+            <p> {{val.desc|safe}} </p>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>

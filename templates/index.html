@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Pathak</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <!-- Loading Indicator -->
+    {% include 'loading.html' %}
+
+    <!-- Heaader -->
+    {% include 'header.html' %}
+
+    <!-- Body -->
+    <div id="main">
+        <div id="main-left">
+            <h2>Hi! I'm</h2>
+            <h1>{{Home.name.0}} {{Home.name.1}}</h1>
+            <h2>{{Home.designation}}</h2>
+            <div id="icons">
+                <a href="https://in.linkedin.com/in/aditya-pathak-183597213"><img src="{% static 'icons/linkedin.png' %}" alt="Linkedin"></a>
+                <a href="mailto:adityapathak2874@gmail.com"><img src="{% static 'icons/mail.png' %}" alt="Mail"></a>
+                <a href="phone:+918840207363"><img src="{% static 'icons/phone.png' %}" alt="Phone"></a>
+                <a href="https://leetcode.com/adityapathak2874/"><img src="{% static 'icons/leetcode.png' %}" alt="LeetCode"></a>
+                <a href="https://www.github.com/Aditya-K-Pathak"><img src="{% static 'icons/github.png' %}" alt="GitHub"></a>
+            </div>  
+        </div>
+        <div id="main-right">
+            <img src="{% static 'images/photo.png' %}" alt="">
+        </div>
+    </div>
+
+    <div id="about">
+        <h1>About Me</h1>
+        <p>
+            {{ Home.about|safe }}
+        </p>
+    </div>
+    <!-- Footer -->
+    {% include 'footer.html' %}
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{% static 'js/index.js' %}"></script>

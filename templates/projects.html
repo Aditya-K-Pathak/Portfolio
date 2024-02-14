@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patent - Aditya Pathak</title>
+    <link rel="stylesheet" href="{% static 'css/pojects.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'js/projects.js' %}"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    {% include 'loading.html' %}
+
+    <!-- Header -->
+    {% include 'header.html' %}
+
+
+    <!-- Body -->
+    <div id="heading">
+        <h1>Projects Undertaken</h1>
+        <p>Hey, I have mentioned all the major projects that
+            I have undertaken and peroformed Successfully...</p>
+    </div>
+
+    <div id="content">
+        {% for name, detail in Projects.items %}
+            <div class="projects">
+                <h2 class="title">{{name}}</h3>
+                <p>
+                    <ul>
+                        {% for data in detail %}
+                        <li>{{data}}</li>
+                        {% endfor %}
+                    </ul>
+                </p>
+            </div>
+            {% endfor %}
+    </div>
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+</body>
+</html>

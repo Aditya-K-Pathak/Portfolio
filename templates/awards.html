@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards - Aditya Pathak</title>
+    <link rel="stylesheet" href="{% static 'css/awards.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'js/awards.js' %}"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    {% include 'loading.html' %}
+
+    {% include 'header.html' %}
+
+    <div id="heading">
+        <h1><span>Awards</span></h1>
+        <p>Hey, I have mentioned all the awards that I have received till date... <br>*All the credits for what I have done and
+        received goes to my parents<strong> (My Mummy and Papa)</strong></p>
+    </div>
+
+    <div id="content">
+        {% for key, value in Awards.items %}
+            <div class="awards">
+                <h2 class="title">{{ key|safe }}</h2>
+                <p>{{ value }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>
