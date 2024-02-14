@@ -7,6 +7,8 @@ import json
 
 # Define a constant for IP address and load data from JSON file
 IP_ADDRESS = [None]
+VALIDATED = [False]
+USERDATA = []
 
 with open("static/data/data.json", "r") as file:
     data = json.loads(file.read())
@@ -95,8 +97,11 @@ def research(request):
 # View function to render the Contact page
 def contact(request):
     # Check if the request method is POST
+    Name, Email, Comment = ["", "", ""]
+    global USERDATA, VALIDATED
     if request.method == 'POST':
         # Store Required Data
+                
         if request.POST.get('Name'):
             Name = request.POST.get('Name')
             Email = request.POST.get('Email')
@@ -104,12 +109,17 @@ def contact(request):
             if mailverification.validationHandler.initiateValidation(
                 Name, Email
             ):
-                actions.Contacts.addQuery(Name, Email, Comment)
-                response = mailverification.RESPONSEMAILTEMPLATE.replace('__name__', Name)
-                response = response.replace('__response__', Comment)
-                mailverification.Mail().sendMail('Your Response has been Recorded', Email, response)
+                USERDATA = [Name, Email, Comment]
                 return redirect('./verification')
-
+    if VALIDATED[0]:
+        Name, Email, Comment = USERDATA
+        actions.Contacts.addQuery(Name, Email, Comment)
+        response = mailverification.RESPONSEMAILTEMPLATE.replace('__name__', Name)
+        response = response.replace('__response__', Comment)
+        mailverification.Mail().sendMail('Your Response has been Recorded', Email, response)
+        VALIDATED = not VALIDATED
+        return redirect('./contact')
+        
     # Call the interface function for the Contact page
     interface(request, 'Contact')
     # Add an instance of contactForm form to data
@@ -120,10 +130,16 @@ def contact(request):
     return render(request, 'contact.html', data)
 
 def verification(request):
+    global VALIDATED, USERDATA
     if request.method == 'POST':
         if request.POST.get('pin'):
+
             if mailverification.validationHandler.checkValidation(
                 request.POST.get('Email'), request.POST.get('pin')
-            ):return redirect('./contact')
+            ):
+                print(VALIDATED)
+                VALIDATED = [True]
+                print(VALIDATED)
+                return redirect('./contact')
     interface(request, 'Contact')
     return render(request, 'verificationpage.html', {'form': Verification()})
