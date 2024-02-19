@@ -1,2 +1,3 @@
-static/*.log
+static/log/verificaton.log
+static/log/logs.json
 FullStack/key.py
