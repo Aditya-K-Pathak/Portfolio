@@ -1,4 +1,5 @@
 # Import necessary modules and libraries
+import key
 import pytz 
 import json
 import ipdata
@@ -6,8 +7,8 @@ import requests
 from datetime import datetime
 
 # API keys and constants
-IP_API_KEY = 'c620dfd0f0f494e8fc73c56baee299eafc18d349bbf212304f2a5bcc'
-WEATHER_API_KEY = 'e96cfa3532dadb821370a79d4ab262ff'
+IP_API_KEY = key.IP_API_KEY
+WEATHER_API_KEY = key.WEATHER_API_KEY
 LOG_BASE_LOCATION = 'static/log/logs.json'
 IST = pytz.timezone('Asia/Kolkata')
 LOGDATA = []
