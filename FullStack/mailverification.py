@@ -1,6 +1,6 @@
-import key
 import smtplib
 import random
+from . import key
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 

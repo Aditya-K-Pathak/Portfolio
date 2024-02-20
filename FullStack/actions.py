@@ -1,9 +1,9 @@
 # Import necessary modules and libraries
-import key
 import pytz 
 import json
 import ipdata
 import requests
+from . import key
 from datetime import datetime
 
 # API keys and constants
