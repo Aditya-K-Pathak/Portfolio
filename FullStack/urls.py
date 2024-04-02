@@ -27,5 +27,6 @@ urlpatterns = [
     path('projects', views.projects),
     path('research', views.research),
     path('verification', views.verification),
-    path('games/', include('games.urls'))
+    path('games/', include('games.urls')),
+    path('sites/', include('sites.urls'))
 ]

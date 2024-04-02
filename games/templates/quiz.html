@@ -9,11 +9,15 @@
     <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
     <title>{{ username }} - Quiz</title>
 </head>
-<body>
+<body>  
     <div id="navbar">
         <h3>The Quiz</h3>
         <h3 id="username">{{ username }}</h3>
-        <h3>{{ Score }}/10</h3>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            <h3>{{ Score }}/10</h3>
+            <a href="../games"> <button onclick="logout()" style="background-color: transparent; color: white; outline: none; border: none; cursor: pointer;">Logout</button>
+            </a>
+        </div>
     </div>
     <div id="main">
         <div id="main_body">
@@ -35,4 +39,9 @@
     </div>
 </body>
 <script src="{% static 'js/script.js' %}"></script>
+<script>
+    const logout = () => {
+        localStorage.clear();
+    }
+</script>
 </html>

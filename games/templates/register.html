@@ -12,13 +12,14 @@
     <div id="content">
         <H1>Register</H1>
         <hr>
-        <form action="" method="post">
+        <form action="./quiz" method="post">
             {% csrf_token %}
             {{ form  }}
-            <input onclick="setval" type="submit">
+            <input onclick="setval()" id="submit" type="submit">
         </form>
     </div>
 </body>
+<script src="{% static 'js/login_script.js' %}"></script>
 <script>
     localStorage.removeItem('username');
 </script>

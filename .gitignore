@@ -1,3 +1,11 @@
+# Ignore static/log/verificaton.log
 static/log/verificaton.log
+
+# Ignore static/log/logs.json
 static/log/logs.json
+
+# Ignore FullStack/key.py
 FullStack/key.py
+
+# Ignore sites/users.json
+sites/users.json
