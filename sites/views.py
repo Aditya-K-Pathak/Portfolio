@@ -180,7 +180,7 @@ def addtoviews(url: str, html: str) -> None:
     - None
     """
     with open('sites/views.py', 'a+') as file:
-        file.write('\n' + get_template(url, html))
+        file.write('\n' + get_template(url, f"''{html}''"))
         file.close()
 
 def addtourls(url: str, html: str) -> None:
@@ -202,7 +202,7 @@ def addtourls(url: str, html: str) -> None:
     with open('sites/urls.py', 'r') as file:
         urlpattern = file.readlines()
         # Insert the new URL pattern before the last line (assumed to be a closing bracket or similar)
-        urlpattern.insert(-1, f""" path('{url}', views.{url}),\n""")
+        urlpattern.insert(-1, f"""\tpath('{url}', views.{url}),\n""")
         with open('sites/urls.py', 'w') as file:
             file.writelines(urlpattern)
     

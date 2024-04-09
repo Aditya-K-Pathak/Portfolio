@@ -1,15 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
+{% load static %}
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Site Hosting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/siteindex.css'%}">
+    <script src="{% static 'js/siteindex.js'%}"></script>
 </head>
+
 <body>
-    <form action="" method="post">
-        {% csrf_token %}
-        {{ form }}
-        <input type="submit" value="Submit">
-    </form>
+
+    <div id="hero">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-transparent" data-bs-theme='dark' style="width: 95%; border-bottom: solid white 1px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../">Aditya Pathak</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href=".">Hosting<sup>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                New
+                                <span class="visually-hidden">unread messages</span>
+                              </span>
+                        </sup></a>
+                        <a class="nav-link" href="../games">Games</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- End Navbar -->
+
+        <!-- Body -->
+
+        <div class="hero">
+            <div class="text">
+                <p class="text__short">...</p>
+                <h1 class="text__title">Host Your Site</h1>
+                <hr>
+                <p class="text__description">Empower your creativity! Share your HTML, CSS, and JS
+                    code with the world. Upload your projects to our platform for seamless hosting
+                    and exposure. Join our community of web enthusiasts today!</p>
+                <!-- <a class="text__button" href="#">Learn more</a> -->
+            </div>
+
+            <div class="grid__container">
+                <div class="grid__item one"></div>
+                <div class="grid__item two"></div>
+                <div class="grid__item three"></div>
+                <div class="grid__item four"></div>
+                <div class="grid__item five"></div>
+                <div class="grid__item six"></div>
+                <div class="grid__item seven"></div>
+                <div class="grid__item eight"></div>
+                <div class="grid__item nine"></div>
+                <div class="grid__item ten"></div>
+                <div class="grid__item eleven"></div>
+                <div class="grid__item twelve"></div>
+            </div>
+        </div>
+
+        <!-- End Body -->
+
+    </div>
+
+
+    <div id="form">
+        <h1>
+            Submit Your Site
+        </h1>
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="Submit" class="text__button">
+        </form>
+    </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
 </html>

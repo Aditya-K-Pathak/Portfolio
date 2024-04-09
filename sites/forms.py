@@ -42,16 +42,18 @@ class userform(forms.Form):
         widget = forms.TextInput(
             attrs = {
                 'id': 'url',
-                'placeholder': 'Enter URL'
+                'placeholder': 'Your End Point URL'
             }
         )
     )
     html = forms.CharField(
         label = '',
-        widget = forms.TextInput(
+        widget = forms.Textarea(
             attrs = {
                 'id': 'html',
-                'placeholder': '</>'
+                'placeholder': 'Enter Your Code',
+                'rows': 5,
+                'cols': 50,
             }
         )
     )
