@@ -1,0 +1,2 @@
+
+# Close the SMTP connection

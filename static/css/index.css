@@ -1,0 +1,355 @@
+body {
+    color: white;
+    min-height: 100vh;
+    background-color: black;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    border-bottom: solid white 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header #nav {
+    min-width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header #logo {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Body */
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom: solid white 1px;
+}
+
+#main div {
+    min-width: 50%;
+    max-width: 100%;
+}
+
+#main #main-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#main #main-left #icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#icons a {
+    max-width: 10%;
+}
+
+#icons a img {
+    width: 40%
+}
+
+#main #main-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main #main-right img {
+    width: 40%;
+    border-radius: 10%;
+}
+
+#about {
+    padding: 10%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid white 1px;
+}
+
+h1 {
+    color: red;
+}
+
+#about p {
+    font-size: 20px;
+    line-height: 200%;
+    text-align: justify;
+}
+
+/* Footer */
+
+#footer {
+    display: flex;
+    padding: 5%;
+    padding-top: 0%;
+    justify-content: center;
+    align-items: center;
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+}
+
+#social a {
+    width: 4%;
+    margin: 5%;
+}
+
+#social a img {
+    width: 100%;
+}
+
+#footer-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-nav a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#newsletter {
+    min-width: 30%;
+    height: 100%;
+}
+
+#newsletter form {
+    display: flex;
+    padding: 10%;
+    flex-direction: column;
+}
+
+#newsletter form input[type=email] {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#newsletter form input[type=submit] {
+    border-radius: 10%;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+#credit {
+    display: flex;
+    justify-content: center;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 500px) {
+
+    /* Header */
+
+    header {
+        display: flex;
+        padding: 5px;
+        justify-content: space-around;
+        border-bottom: solid white 1px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 5px;
+    }
+
+    header #nav {
+        /* min-width: 60%; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header #logo {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    #nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+    /* Body */
+
+    #main {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+        height: 90vh;
+        border-bottom: solid white 1px;
+        font-size: x-small;
+    }
+
+    #main #main-left {
+        order: 2;
+        display: flex;
+        text-align: end;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #main #main-left #icons {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #icons {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #icons a {
+        max-width: 20%;
+    }
+
+    #icons a img {
+        width: 40%
+    }
+
+    #main #main-right {
+        order: 1;
+        display: flex;
+        height: 40%;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    #main #main-right img {
+        width: 60%;
+        border-radius: 10%;
+    }
+
+    #about {
+        padding: 10%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: solid white 1px;
+    }
+
+    h1 {
+        color: red;
+    }
+
+    #about p {
+        font-size: 12px;
+        line-height: 200%;
+        text-align: justify;
+    }
+
+
+    /* Footer */
+
+    #footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5%;
+        padding-top: 0%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-content {
+        order: 2;
+    }
+
+    #social {
+        display: flex;
+        justify-content: center;
+    }
+
+    #social a {
+        width: 10%;
+        padding: 5%;
+    }
+
+    #social a img {
+        width: 100%;
+    }
+
+    #footer-nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #footer-nav a {
+        font-size: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #newsletter {
+        order: 1;
+        min-width: 80%;
+        height: 100%;
+    }
+
+    #newsletter form {
+        display: flex;
+        padding: 10%;
+        flex-direction: column;
+    }
+
+    #newsletter form input[type=email] {
+        width: 100%;
+        height: 25px;
+        border: none;
+        outline: none;
+        font-size: 12px;
+        border-radius: 15px;
+        text-align: center;
+    }
+
+    #newsletter form input[type=submit] {
+        border-radius: 10%;
+        color: white;
+        font-size: 12px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    #credit {
+        display: flex;
+        justify-content: center;
+    }
+}

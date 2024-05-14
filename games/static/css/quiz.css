@@ -1,0 +1,45 @@
+body, html{
+    min-height: 100vh;
+    color: white;
+    background-color: black;
+}
+
+body #navbar{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+    border-bottom: solid grey 1px;
+}
+body #main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+body #main #main_body{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+body #main #main_body #content{
+    display: flex;
+    min-width: 50%;
+}
+body #main #main_body #content div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+}
+body #main #main_body #content #option{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 50%;
+}
+#user_name{
+    width: 0px;
+    visibility: hidden;
+}

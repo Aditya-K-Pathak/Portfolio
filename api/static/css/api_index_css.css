@@ -1,0 +1,52 @@
+body {
+    background: rgb(53, 11, 11);
+    background: linear-gradient(62deg, rgba(53, 11, 11, 1) 0%, rgba(5, 5, 73, 1) 100%);
+    color: white;
+    padding: 1%;
+    font-size: 0.9em;
+}
+
+body section {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2%;
+    text-align: justify;
+}
+
+#parameters {
+    padding: 2%;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parameter-container {
+    max-width: 45%;
+}
+
+.code-card {
+    width: 94%;
+    background-color: rgb(218, 218, 218);
+    border-radius: 8px;
+    padding: 2%;
+    color: black;
+    position: absolute;
+}
+
+#languages {
+    display: flex;
+    justify-content: space-around;
+}
+
+.language-name {
+    cursor: pointer;
+    margin: 0px;
+    padding: 1%;
+    padding-bottom: 0%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#language:hover {
+    background-color: rgb(218, 218, 218);
+    color: black;
+}

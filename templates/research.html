@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Papers - Aditya Pathak</title>
+</head>
+<body>
+    <!-- Loading Indicator -->
+    {% include 'loading.html' %}
+
+    <!-- Heaader -->
+    {% include 'header.html' %}
+
+    <!-- Body -->
+    <div id="heading">
+        <h1>Research Papers</h1>
+        <p>Hey, I have mentioned about the research papers that I have wrote and published..</p>  
+    </div>
+
+    <div id="content">
+        {% for key, value in Research.items %}
+            <h2>{{ key }}</h2>
+            <h3>Publisher: {{ value.publisher }}</h3>
+            <h3>DOI: {{ value.doi }}</h3>
+            <h3>Author: {{ value.author }}</h3>
+            <p>Author: {{ value.desc }}</p>
+        {% endfor%}
+    </div>
+
+    <!-- Footer -->
+    {% include 'footer.html' %}
+</body>
+</html>
+<link rel="stylesheet" href="{% static 'css/research.css' %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{% static 'js/index.js' %}"></script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/quiz.css' %}">
+    <title>{{ username }} - Quiz</title>
+</head>
+<body>  
+    <div id="navbar">
+        <h3>The Quiz</h3>
+        <h3 id="username">{{ username }}</h3>
+        <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+            <h3>{{ Score }}/10</h3>
+            <a href="../games"> <button onclick="logout()" style="background-color: transparent; color: white; outline: none; border: none; cursor: pointer;">Logout</button>
+            </a>
+        </div>
+    </div>
+    <div id="main">
+        <div id="main_body">
+            <div id="content">
+                <div id="question"><h2>{{ question|safe }}</h2></div>
+                <div id="option">
+                    {% for option in options %}
+                        <h3>{{ option|safe }}</h3>
+                        <br>
+                    {% endfor %}
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{ form }}
+                    <input type="submit" value="Next">
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="{% static 'js/script.js' %}"></script>
+<script>
+    const logout = () => {
+        localStorage.clear();
+    }
+</script>
+</html>

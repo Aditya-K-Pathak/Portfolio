@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards - Aditya Pathak</title>
+    <script src="{% static 'js/awards.js' %}"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    {% include 'loading.html' %}
+
+    {% include 'header.html' %}
+
+    <div id="content">
+        <h1>Verify E-Mail</h1>
+        <div id="form">
+            <form action="" method="post">
+                {% csrf_token %}
+
+                {{ form }}
+
+                <input href="./verificationpage.html" type="submit" id="submitpin">
+            </form>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>
+<link rel="stylesheet" href="{% static 'css/verification.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

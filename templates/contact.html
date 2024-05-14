@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Aditya Pathak</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="{% static 'js/patents.js' %}"></script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    {% include 'loading.html' %}
+
+    {% include 'header.html' %}
+
+    <div id="content">
+        <div id="form">
+            <form action="" method="post" id="contact_form">
+                {% csrf_token %}
+
+                {{ ContactForm }}
+                <input type="submit">
+            </form>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+</body>
+</html>
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
